@@ -1,0 +1,30 @@
+Order Allow,Deny
+
+<FilesMatch "^logo\.png$">
+    Allow from all
+</FilesMatch>
+<FilesMatch "^initialize\.php$">
+    Allow from all
+</FilesMatch>
+<FilesMatch "^migrate\.php$">
+    Allow from all
+</FilesMatch>
+<FilesMatch "^update\.php$">
+    Allow from all
+</FilesMatch>
+<FilesMatch "^create-dump\.php$">
+    Allow from all
+</FilesMatch>
+<FilesMatch "^install\.php$">
+    Allow from all
+</FilesMatch>
+<FilesMatch "^index\.html$">
+    Allow from all
+</FilesMatch>
+<FilesMatch "^packaging\.php$">
+    Allow from all
+</FilesMatch>
+<FilesMatch "^$">
+    Allow from all
+</FilesMatch>
+Deny from all

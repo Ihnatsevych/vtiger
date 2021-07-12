@@ -1,0 +1,329 @@
+.FormGenTab {
+  background-color: #fff;
+  padding: 10px;
+}
+.FormGenTab.FullSize {
+  padding: 0;
+}
+.FormGenEditorTabs {
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: inset 1px 1px 3px #777777;
+  background-color: #eee;
+  margin-bottom: 0;
+}
+.FormGenEditorTabs li {
+  list-style-type: none;
+  line-height: 25px;
+  margin: 0;
+  float: left;
+  font-weight: bold;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid transparent;
+  border-bottom: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.FormGenEditorTabs li.ActiveFormTab {
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+  border-bottom: none !important;
+  box-shadow: 1px 1px 1px #777777;
+}
+.ActiveFormGenTab {
+  display: block !important;
+}
+.FormGenFields {
+  display: flex;
+  flex-wrap: wrap;
+}
+.FormGenFields .FormGenField {
+  display: flex;
+  box-sizing: border-box;
+}
+.FormGenFields .FormGenField .group {
+  padding-right: 5px;
+  width: 100%;
+}
+.FormGenFields .FormGenFullwidthField {
+  width: 100% !important;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.FormGenFields.Columns_1 .FormGenField {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.FormGenFields.Columns_2 .FormGenField {
+  padding-right: 10px;
+}
+.FormGenFields.Columns_2 .FormGenField:nth-child(2n+2) {
+  padding-right: 0;
+}
+.FormGenFields.Columns_2 .FormGenField {
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.FormGenFields.Columns_3 .FormGenField {
+  width: 33%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.FormGenFields.Columns_3 .FormGenField {
+  padding-right: 10px;
+}
+.FormGenFields.Columns_3 .FormGenField:nth-child(3n+3) {
+  padding-right: 0;
+}
+.FormGenFields.Columns_4 .FormGenField {
+  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.FormGenFields.Columns_4 .FormGenField {
+  padding-right: 10px;
+}
+.FormGenFields.Columns_4 .FormGenField:nth-child(4n+4) {
+  padding-right: 0;
+}
+/*
+ * @copyright 2016-2017 Redoo Networks GmbH
+ * @link https://redoo-networks.com/
+ * This file is part of a vTigerCRM module, implemented by Redoo Networks GmbH and must not used without permission.
+ */
+.materialstyle {
+  /* form starting stylings ------------------------------- */
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /*  .highlight {
+      position:absolute;
+      height:60%;
+      width:100px;
+      top:25%;
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+
+      background-color:transparent;
+      border:none;
+    }
+  */
+}
+.materialstyle.group {
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.materialstyle.prefix-icon .fa {
+  position: absolute;
+  top: 8px;
+  font-size: 14px;
+}
+.materialstyle.prefix-icon label {
+  left: 19px;
+}
+.materialstyle.prefix-icon input {
+  padding-left: 20px;
+}
+.materialstyle.no-padding {
+  padding-left: 0;
+  padding-right: 0 !important;
+  margin: 0;
+}
+.materialstyle.no-padding .cke_reset {
+  border: none !important;
+}
+.materialstyle input:read-only {
+  color: #aaa;
+}
+.materialstyle input {
+  font-size: 16px;
+  padding: 10px 10px 10px 0px;
+  display: block;
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid #757575;
+  box-sizing: border-box;
+}
+.materialstyle select {
+  font-size: 18px;
+  padding: 5px 10px 5px 0px;
+  display: block;
+  width: 100%;
+  border: none;
+  height: 38px;
+  border-bottom: 1px solid #757575;
+}
+.materialstyle textarea {
+  font-size: 14px;
+  padding: 3px 5px;
+  display: block;
+  width: 100%;
+  height: 150px;
+  border: 1px solid #757575;
+}
+.materialstyle .select2-container {
+  width: 100%;
+}
+.materialstyle .select2-container .select2-choices .select2-search-field input,
+.materialstyle .select2-container .select2-choice,
+.materialstyle .select2-container .select2-choices {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.materialstyle input:focus,
+.materialstyle select:focus,
+.materialstyle textarea:focus {
+  outline: none;
+}
+.materialstyle.type-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+.materialstyle.type-checkbox .bar {
+  display: none;
+}
+.materialstyle.type-checkbox label {
+  flex-grow: 1;
+  position: relative;
+  color: #6b6b6b;
+}
+.materialstyle .errorMsg {
+  color: #790000;
+}
+.materialstyle label {
+  color: #bbb;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 5px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.materialstyle input:focus ~ label,
+.materialstyle input.used ~ label,
+.materialstyle select:focus ~ label,
+.materialstyle select.used ~ label,
+.materialstyle textarea:focus ~ label,
+.materialstyle textarea.used ~ label,
+.materialstyle .childcomponent.used ~ label {
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  color: #5264AE;
+}
+.materialstyle .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.materialstyle .bar:before,
+.materialstyle .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.materialstyle .bar:before {
+  left: 50%;
+}
+.materialstyle .bar:after {
+  right: 50%;
+}
+.materialstyle input:focus ~ .bar:before,
+.materialstyle input:focus ~ .bar:after {
+  width: 50%;
+}
+.materialstyle.has-helptext .datePickerClearBtn {
+  right: 35px;
+}
+.materialstyle .datePickerClearBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #777;
+}
+.FormGenField.validate-error .EventEditorInputField {
+  border-bottom-color: #790000;
+  color: #790000;
+}
+.CC_helpText {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 18px;
+  color: #bbbaba;
+}
+.tippy-popper[x-placement^=top] .tippy-tooltip.flexsuite-theme .tippy-arrow {
+  border-top: 8px solid #505355;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.flexsuite-theme .tippy-arrow {
+  border-bottom: 8px solid #505355;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+.tippy-popper[x-placement^=left] .tippy-tooltip.flexsuite-theme .tippy-arrow {
+  border-left: 8px solid #505355;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.tippy-popper[x-placement^=right] .tippy-tooltip.flexsuite-theme .tippy-arrow {
+  border-right: 8px solid #505355;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.tippy-tooltip.flexsuite-theme {
+  background-color: #505355;
+  padding: 0.25rem 0.4375rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.tippy-tooltip.flexsuite-theme .tippy-content {
+  font-size: 13px;
+  padding: 6px;
+}
+.tippy-tooltip.flexsuite-theme .tippy-backdrop {
+  background-color: #505355;
+}
+.tippy-tooltip.flexsuite-theme .tippy-roundarrow {
+  fill: #505355;
+}
+.tippy-tooltip.flexsuite-theme[data-animatefill] {
+  background-color: transparent;
+}
+.tippy-tooltip.flexsuite-theme[data-size=small] {
+  font-size: 0.75rem;
+  padding: 0.1875rem 0.375rem;
+}
+.tippy-tooltip.flexsuite-theme[data-size=large] {
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+}
+.referenceComponent {
+  display: flex;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 2px;
+  line-height: 30px;
+}
+.referenceComponent .RecordLabel {
+  flex-grow: 1;
+}

@@ -1,0 +1,283 @@
+/*
+ * @copyright 2016-2017 Redoo Networks GmbH
+ * @link https://redoo-networks.com/
+ * This file is part of a vTigerCRM module, implemented by Redoo Networks GmbH and must not used without permission.
+ */
+
+.materialstyle {
+  /* form starting stylings ------------------------------- */
+
+  &.group {
+    position: relative;
+    margin-bottom: 5px;
+
+    //border:1px solid #cccccc;
+    margin-top: 20px;
+  }
+
+  &.prefix-icon {
+    .fa {
+      position: absolute;
+      top: 8px;
+      font-size: 14px;
+    }
+
+    label {
+      left: 19px;
+    }
+
+    input {
+      padding-left: 20px;
+    }
+  }
+
+  &.no-padding {
+    padding-left:0;
+    padding-right:0 !important;
+    margin:0;
+
+    .cke_reset {
+      border:none !important;
+    }
+  }
+
+  input:read-only {
+    color:#aaa;
+  }
+
+  input {
+    font-size: 16px;
+    padding: 10px 10px 10px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    height: 30px;
+    border-bottom: 1px solid #757575;
+    box-sizing: border-box;
+  }
+
+  select {
+    font-size: 18px;
+    padding: 5px 10px 5px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    height: 38px;
+    border-bottom: 1px solid #757575;
+  }
+
+  textarea {
+    font-size: 14px;
+    padding: 3px 5px;
+    display: block;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #757575;
+  }
+
+  .select2-container {
+    width: 100%;
+  }
+
+  .select2-container .select2-choices .select2-search-field input, .select2-container .select2-choice, .select2-container .select2-choices {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+  }
+
+  &.type-checkbox {
+    display: flex;
+    flex-direction: row;
+
+    .bar {
+      display: none;
+    }
+
+    label {
+      flex-grow: 1;
+      position: relative;
+      color: #6b6b6b;
+    }
+  }
+
+  .errorMsg {
+    color: #790000;
+  }
+
+
+  /* LABEL ======================================= */
+
+  label {
+    color: #bbb;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 5px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  /* active state */
+
+  input:focus ~ label, input.used ~ label, select:focus ~ label, select.used ~ label, textarea:focus ~ label, textarea.used ~ label, .childcomponent.used ~ label {
+    top: -18px;
+    left: 0;
+    font-size: 12px;
+    color: #5264AE;
+  }
+
+  /* BOTTOM BARS ================================= */
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  .bar:before {
+    left: 50%;
+  }
+
+  .bar:after {
+    right: 50%;
+  }
+
+  /* active state */
+
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+  }
+
+  /* HIGHLIGHTER ================================== */
+  /*  .highlight {
+      position:absolute;
+      height:60%;
+      width:100px;
+      top:25%;
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+
+      background-color:transparent;
+      border:none;
+    }
+  */
+
+  &.has-helptext {
+    .datePickerClearBtn {
+      right:35px;
+    }
+  }
+
+  .datePickerClearBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #777;
+  }
+
+
+}
+
+.FormGenField.validate-error {
+  .EventEditorInputField {
+    border-bottom-color: #790000;
+    color: #790000;
+  }
+}
+
+.CC_helpText {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 18px;
+  color: #bbbaba;
+}
+
+.tippy-popper[x-placement^=top] .tippy-tooltip.flexsuite-theme .tippy-arrow {
+  border-top: 8px solid #505355;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.flexsuite-theme .tippy-arrow {
+  border-bottom: 8px solid #505355;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent
+}
+
+.tippy-popper[x-placement^=left] .tippy-tooltip.flexsuite-theme .tippy-arrow {
+  border-left: 8px solid #505355;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent
+}
+
+.tippy-popper[x-placement^=right] .tippy-tooltip.flexsuite-theme .tippy-arrow {
+  border-right: 8px solid #505355;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent
+}
+
+.tippy-tooltip.flexsuite-theme {
+  background-color: #505355;
+  padding: .25rem .4375rem;
+  font-size: .8125rem;
+  font-weight: 600;
+
+  .tippy-content {
+    font-size:13px;
+    padding:6px;
+  }
+}
+
+.tippy-tooltip.flexsuite-theme .tippy-backdrop {
+  background-color: #505355
+}
+
+.tippy-tooltip.flexsuite-theme .tippy-roundarrow {
+  fill: #505355
+}
+
+.tippy-tooltip.flexsuite-theme[data-animatefill] {
+  background-color: transparent
+}
+
+.tippy-tooltip.flexsuite-theme[data-size=small] {
+  font-size: .75rem;
+  padding: .1875rem .375rem
+}
+
+.tippy-tooltip.flexsuite-theme[data-size=large] {
+  font-size: 1rem;
+  padding: .375rem .75rem
+}
+
+.referenceComponent {
+  display: flex;
+  border: 1px solid#ccc;
+  width: 100%;
+  padding: 2px;
+  line-height:30px;
+
+  .RecordLabel {
+    flex-grow:1;
+  }
+}

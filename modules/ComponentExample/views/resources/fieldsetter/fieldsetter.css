@@ -1,0 +1,27 @@
+.FlexFieldSetterRow {
+  display: flex;
+  flex-direction: row;
+}
+.FlexFieldSetterRow .FieldSetterField {
+  width: 40%;
+  min-width: 350px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.FlexFieldSetterRow .FieldSetterMode {
+  width: 100px;
+  margin: 0 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.FlexFieldSetterRow .FieldSetterValueContainer {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 40%;
+}
+.FlexFieldSetterRow .FieldSetterValueContainer textarea {
+  flex-grow: 1;
+}
+.FlexFieldSetterRow .templateFieldSpan textarea {
+  border-right: none;
+}

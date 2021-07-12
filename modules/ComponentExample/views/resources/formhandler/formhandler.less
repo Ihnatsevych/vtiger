@@ -1,0 +1,125 @@
+.FormGenTab {
+  background-color:#fff;
+  padding:10px;
+}
+.FormGenTab.FullSize {
+  padding:0;
+}
+
+.FormGenEditorTabs {
+  padding:0;
+
+  list-style-type: none;
+
+  overflow:hidden;
+  border-bottom:1px solid #cccccc;
+
+  box-shadow: inset 1px 1px 3px #777777;
+  background-color:#eee;
+  margin-bottom:0;
+
+  li {
+    list-style-type: none;
+    line-height:25px;
+
+    margin:0;
+
+    float:left;
+    font-weight:bold;
+
+    padding:5px 15px 5px 15px;
+    border:1px solid transparent;
+    border-bottom:none;
+    cursor:pointer;
+    font-size:14px;
+
+    //border-top-left-radius: 5px;
+    //border-top-right-radius: 5px;
+
+    &.ActiveFormTab {
+      background-color:#cccccc;
+      border:1px solid #cccccc;
+      border-bottom:none !important;
+
+      box-shadow:1px 1px 1px #777777;
+    }
+  }
+}
+.ActiveFormGenTab {
+  display:block !important;
+}
+
+.FormGenFields {
+  display:flex;
+  flex-wrap: wrap;
+
+  .FormGenField {
+    display:flex;
+    box-sizing: border-box;
+
+    .group {
+      padding-right:5px;
+
+      width:100%;
+    }
+  }
+
+  .FormGenFullwidthField {
+    width:100% !important;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+  }
+  &.Columns_1 {
+    .FormGenField {
+      width:100%;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+  &.Columns_2 {
+    .FormGenField {
+      padding-right:10px;
+    }
+    .FormGenField:nth-child(2n+2) {
+      padding-right:0;
+    }
+    .FormGenField {
+      width:50%;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+
+  &.Columns_3 {
+    .FormGenField {
+      width:33%;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    .FormGenField {
+      padding-right:10px;
+    }
+    .FormGenField:nth-child(3n+3) {
+      padding-right:0;
+    }
+  }
+
+  &.Columns_4 {
+    .FormGenField {
+      width:25%;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    .FormGenField {
+      padding-right:10px;
+    }
+    .FormGenField:nth-child(4n+4) {
+      padding-right:0;
+    }
+  }
+
+}
+
+@import 'materialstyle';
+

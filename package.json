@@ -1,0 +1,47 @@
+{
+  "name": "flexsuite",
+  "version": "1.0.0",
+  "description": "FlexSuite",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.redoo-networks.com:2233/Redoo-Networks/FlexSuite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-footer": "^2.0.2",
+    "gulp-header": "^2.0.9",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-jshint": "^2.1.0",
+    "gulp-jslint": "^1.0.10",
+    "gulp-less": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-comments": "^2.5.2",
+    "jshint": "^2.10.2",
+    "less-plugin-autoprefix": "^2.0.0",
+    "lodash.assign": "^4.2.0",
+    "tsify": "^4.0.1",
+    "typescript": "^3.5.3",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {
+    "gulp-concat-util": "^0.5.5",
+    "gulp-minify": "^3.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
